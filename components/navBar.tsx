@@ -11,7 +11,7 @@ export default function NavBar() {
                     <a href="./resume" className="block py-2 px-3 text-white rounded bg-transparent md:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Resume</a>
                     </li>
                     <li>
-                    <a href="./projects" className="block py-2 px-3 text-white rounded bg-transparent md:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Projects</a>
+                    <a href="#ProjHead" className="block py-2 px-3 text-white rounded bg-transparent md:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Projects</a>
                     </li>
                     
                 </ul>
