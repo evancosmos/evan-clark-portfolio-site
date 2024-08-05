@@ -31,25 +31,19 @@ export default function Home() {
         </div>
 
         {/*Intro Text*/}
-        <div className="text-white text-left top-6 mx-20 mt-20 font-mono text-8xl">
+        <div className="text-white text-left top-6 mx-4 mt-8 font-mono text-4xl md:mt-20 md:mx-20 md:text-8xl">
           Hey I'm Evan, <br/>
-          Software Developer and team player <br/>
+          Software Developer and Technical Analyst.<br/>
           Based out of Vancouver, <br/>
-          Canada 
+          Canada
         </div>
       </div>
 
-      <div id="contactinfo" className="text-white text-left font-sans text-4xl mx-20 pt-2 space-x-7">
-        <a>Github</a>
-        <a>LinkedIn</a>
-        <a>Email</a>
+      <div id="contactinfo" className="text-white relative z-20 text-left font-sans text-xl mx-5 pt-2 space-x-7 md:text-4xl md:mx-20">
+        <a className="hover:text-blue-800" href="https://github.com/evancosmos">Github</a>
+        <a className="hover:text-blue-800" href="https://www.linkedin.com/in/gitcommit-m-evan-clark/">LinkedIn</a>
+        <a className="hover:text-blue-800" href="mailto:evanclark@live.ca">Email</a>
       </div>
-
-      {/*Project Display*/}
-
-
-      {/*About Text*/}
-      <div>This website was made using NextJS, React, and Tailwind</div>
 
     </div>
   );
