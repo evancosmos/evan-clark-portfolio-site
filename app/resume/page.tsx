@@ -41,11 +41,11 @@ export default function Resume() {
         <div>
             <NavBar/>
 
-            <button onClick={toggleInvert} className="fixed z-30 bottom-3 right-3 bg-blue-500 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded m-5">Toggle Night Mode</button>
-            <a href="Evan_Clark_Resume.pdf" className="fixed z-30 bottom-3 left-3 bg-blue-500 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded m-5">Download Resume</a>
+            <button onClick={toggleInvert} className="fixed z-30 bottom-3 right-3 bg-blue-500 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded md:m-5">Toggle Night Mode</button>
+            <a href="Evan_Clark_Resume.pdf" className="fixed z-30 bottom-3 left-3 bg-blue-500 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded md:m-5">Download Resume</a>
 
             <div id="resContain" className="flex flex-col items-center">
-                { isPDFLoad ? <div className="fixed animate-gentleping bg-blue-300 top-[125px] w-[920px] h-[1185px] -z-10"/> : <span/> }
+                { isPDFLoad ? <div className="absolute animate-gentleping bg-blue-300 top-[125px] w-[920px] h-[1185px] -z-10"/> : <span/> }
                     <span className={dynamicInvert}>
                         { isPDFLoad ? <span/> : 
                         <div className="pt-40">
@@ -58,7 +58,7 @@ export default function Resume() {
                     </span>
             </div>
 
-            <div id="dummyDivForMorePage" className="bg-opacity-0 h-40"></div>
+            <div id="dummyDivForMorePage" className="opacity-0 h-60"></div>
         </div>
     );
 

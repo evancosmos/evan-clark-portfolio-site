@@ -51,7 +51,7 @@ export default function Home() {
       <div id="ProjHead" className="text-white relative z-20 text-left font-sans text-xl mx-5 mb-10 space-x-7 md:text-6xl md:mx-9">Personal Projects</div>
       <div id="ProjContainer" className="grid grid-cols-1 md:grid-cols-3 text-white text-lg gap-9 mx-9 font-mono">
         <Project name="Natural Language Processing on OkCupid Data" link="https://github.com/evancosmos/NLP-on-OkCupidData" image="https://cdn.pixabay.com/photo/2017/04/13/20/26/artificial-intelligence-2228610_960_720.jpg" description="test1"/>
-        <Project name="https://spotitime-ce99f.firebaseapp.com/" link="" image="https://cdn.pixabay.com/photo/2013/07/12/18/17/equalizer-153212_960_720.png" description="test2"/>
+        <Project name="Spotitime" link="https://spotitime-ce99f.firebaseapp.com/" image="https://cdn.pixabay.com/photo/2013/07/12/18/17/equalizer-153212_960_720.png" description="test2"/>
         <Project name="Translink Thing" link="google.com" image="https://upload.wikimedia.org/wikipedia/commons/5/5e/Vancouver_E40LFR_trolleybus_2214.jpg" description="test3"/>
       </div>
 
