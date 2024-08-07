@@ -23,7 +23,8 @@ export default function Project({name, image, link, description}: ProjectProps) 
 
     const handleResize = () => {
         if (window.innerWidth < 720) {
-            setDynamicOpacity("opacity-30")
+            setIsHover(true)
+            setDynamicOpacity("opacity-90")
         } else {
             setIsHover(false)
             setDynamicOpacity("")
@@ -39,12 +40,12 @@ export default function Project({name, image, link, description}: ProjectProps) 
     <div className="hover:scale-110 ">
         <div>{name}</div>
         <a href={link}>
-        <div onPointerEnter={() => activeProj(true)} onPointerLeave={() => activeProj(false)} className="image-container relative bg-gradient-to-t from-black">
+        <div onMouseEnter={() => activeProj(true)} onMouseLeave={() => activeProj(false)} className="image-container relative bg-gradient-to-t from-black">
             <img src={image} className={dynamicOpacity}/>
             
             { isHover ?
-            <div className="text-overlay absolute left-0 top-0 p-4">
-                {description}
+            <div className="text-overlay md:absolute left-0 top-0 p-4">
+                <p className="text-ellipsis overflow-hidden">{description}</p>
             </div>
             : <span/> }
         </div>

@@ -38,14 +38,14 @@ export default function Resume() {
     }, [])
       
     return (
-        <div>
+        <div className="mb-60">
             <NavBar/>
 
-            <button onClick={toggleInvert} className="fixed z-30 bottom-3 right-3 bg-blue-500 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded md:m-5">Toggle Night Mode</button>
-            <a href="Evan_Clark_Resume.pdf" className="fixed z-30 bottom-3 left-3 bg-blue-500 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded md:m-5">Download Resume</a>
+            <button onClick={toggleInvert} className="fixed z-30 w-30 inset-x-10 md:inset-x-auto bottom-3 md:right-3 bg-blue-500 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded md:m-5">Toggle Night Mode</button>
+            <a href="Evan_Clark_Resume.pdf"><button className="fixed z-30 w-30 inset-x-10 md:inset-x-auto bottom-16 md:bottom-3 md:left-3 bg-blue-500 hover:bg-blue-400 text-black font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded md:m-5">Download Resume</button></a>
 
             <div id="resContain" className="flex flex-col items-center">
-                { isPDFLoad ? <div className="absolute animate-gentleping bg-blue-300 top-[125px] w-[920px] h-[1185px] -z-10"/> : <span/> }
+                { isPDFLoad ? <div className={`absolute animate-gentleping bg-blue-300 top-[125px] w-[900px] h-[1185px] -z-10`}/> : <span/> } {/* This is broken on mobile*/}
                     <span className={dynamicInvert}>
                         { isPDFLoad ? <span/> : 
                         <div className="pt-40">
@@ -58,7 +58,6 @@ export default function Resume() {
                     </span>
             </div>
 
-            <div id="dummyDivForMorePage" className="opacity-0 h-60"></div>
         </div>
     );
 

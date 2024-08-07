@@ -28,7 +28,7 @@ export default function Home() {
           </div>
 
           {/*Intro Text*/}
-          <div className="text-white text-left top-6 mx-4 mt-8 font-mono text-5xl md:mt-20 md:mx-20 md:text-8xl">
+          <div id="mainText" className="text-white text-left h-fit top-6 mx-4 mt-8 font-mono text-5xl md:mt-20 md:mx-20 md:text-8xl">
             Hey I'm Evan, <br/>
             Software Developer & Technical Analyst.<br/>
             Based out of Vancouver, <br/>
