@@ -1,3 +1,9 @@
-Evan Clark Resume Site
+Evan Clark Portfolio Site
 
-TODO: Make Resume Page Btns show up on mobile properly
+Live URL: https://evanclarkresume.netlify.app/resume
+
+TO RUN LOCALLY:
+-Make sure you are using node version 22
+-install packages with 'npm i'
+-run with 'npm dev'
+-Open a browser to localhost:3000
